@@ -1,7 +1,9 @@
+import watchimag from "./watch1.png"
 export default function main(){
     return(
    <div className="main">
     <Header></Header>
+    <Section></Section>
    </div>
     )
 }
@@ -20,5 +22,16 @@ function Header(){
             
             </div>
         </header>
+    )
+
+}
+
+function Section(){
+    return(
+    <div className="cards">
+        <img src={watchimag} alt="watch" width={"200px"} />
+        <h1 className="head-content">Lorem, ipsum.</h1>
+        <p className="paragraph-content">Lorem, ipsum.</p>
+    </div>
     )
 }
