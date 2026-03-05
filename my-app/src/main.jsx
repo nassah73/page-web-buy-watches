@@ -8,6 +8,7 @@ export default function main(){
 function Header(){
     return (
         <header className="header">
+            <div className="header-content">
             <h1 className="logo">BuyWatchs</h1>
             <nav className="nav-bar">
                  <ul>
@@ -16,9 +17,8 @@ function Header(){
                     <li>stores</li>
                  </ul>
             </nav>
-            <nav className="drop-down">
-
-            </nav>
+            
+            </div>
         </header>
     )
 }

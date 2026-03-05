@@ -8,18 +8,24 @@
     justify-self: center;
     margin-top: 20px;
     border-radius: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.header{
+.header-content{
     display: flex;
+   
     color: white;
     justify-content: space-between;
     .nav-bar ul{
         display: flex;
         margin-top: 10px;
+        margin-right: 40px;
         li{
-            margin-left: 40px;
+            margin-right: 40px;
             list-style: none;
            
         }
+    }
+    .logo{
+        margin-left: 20px;
     }
 }
