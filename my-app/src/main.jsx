@@ -30,8 +30,10 @@ function Section(){
     return(
     <div className="cards">
         <img src={watchimag} alt="watch" width={"200px"} />
-        <h1 className="head-content">Lorem, ipsum.</h1>
+        <nav className="content">
+        <h3 className="head-content">Lorem, ipsum.</h3>
         <p className="paragraph-content">Lorem, ipsum.</p>
+        </nav>
     </div>
     )
 }
