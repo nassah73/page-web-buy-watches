@@ -4,7 +4,7 @@ export default function main(){
     return(
    <div className="main">
     <Header></Header>
-    <main>
+    <main >
         {
         objet.map((data)=>{
         return <Section
@@ -47,7 +47,7 @@ function Section(props){
         <h3 className="head-content">{props.name}</h3>
         <p className="paragraph-content">{props.description}</p>
          </section>
-         <p className="price">{props.price}</p>
+         <p className="price">{props.price}$</p>
         </nav>
     </div>
     )
