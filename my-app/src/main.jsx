@@ -41,7 +41,7 @@ function Header(){
 function Section(props){
     return(
     <div className="cards">
-        <img src={watchimag} alt="watch" width={"200px"} />
+        <img src={props.img} alt="watch" width={"200px"} />
         <nav className="content">
             <section>
         <h3 className="head-content">{props.name}</h3>
