@@ -1,9 +1,21 @@
 import watchimag from "./watch1.png"
+import objet from './data'
 export default function main(){
     return(
    <div className="main">
     <Header></Header>
-    <Section></Section>
+    <main>
+        {
+        objet.map((data)=>{
+        return <Section
+              {...data}
+        />
+        })
+        }
+        
+        
+    </main>
+    
    </div>
     )
 }
@@ -26,13 +38,16 @@ function Header(){
 
 }
 
-function Section(){
+function Section(props){
     return(
     <div className="cards">
         <img src={watchimag} alt="watch" width={"200px"} />
         <nav className="content">
-        <h3 className="head-content">Lorem, ipsum.</h3>
-        <p className="paragraph-content">Lorem, ipsum.</p>
+            <section>
+        <h3 className="head-content">{props.name}</h3>
+        <p className="paragraph-content">{props.description}</p>
+         </section>
+         <p className="price">{props.price}</p>
         </nav>
     </div>
     )
